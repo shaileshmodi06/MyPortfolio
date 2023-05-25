@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(5, 34, 34);
+    /* background: url(Untitled-1.jpg) no-repeat 0 0;  */
+
+}
+
+.container {
+    /* max-width: 80%; */
+    width: 90%;
+}
+
+#header {
+
+    position: fixed;
+    background-color:transparent;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 35px;
+    z-index: 100;
+
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 74px;
+
+}
+
+.navbar {
+    margin-right: 35px;
+}
+
+.navbar a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    margin-left: 35px;
+    font-weight: 500;
+    transition: 0.3s;
+
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: aqua;
+
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 0 10%;
+
+
+}
+
+.home-content {
+    max-width: 600px;
+
+
+}
+
+.home-content h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.2;
+
+}
+
+.home-content h3 {
+    color: aqua;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.home-content p {
+    font-size: 16px;
+    color: white;
+    margin: 20px 0 40px;
+
+}
+
+.btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+
+
+}
+
+.btn-box a {
+    position: relative;
+    display: flex;
+    font-size: 19px;
+    width: 150px;
+    height: 100%;
+    background: aqua;
+    border: 2px solid aqua;
+    border-radius: 8px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: aqua;
+}
+
+.btn-box a:nth-child(2):hover {
+    color: rgb(5, 34, 34);
+}
+
+.btn-box a:nth-child(1):hover {
+    color: aqua;
+}
+
+.btn-box a:nth-child(2)::before {
+    background: aqua;
+}
+
+.btn-box a::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(5, 34, 34);
+
+    z-index: -1;
+    transition: 0.5s;
+
+}
+
+.btn-box a:hover::before {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.home-sci {
+    position: absolute;
+    width: 170px;
+    bottom: 40px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    text-decoration: none;
+    border: 2px solid aqua;
+    border-radius: 50px;
+    color: aqua;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-sci a::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: aqua;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.home-sci a:hover {
+    color: rgb(5, 34, 34);
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+    height: 100%;
+
+}
+
+.home .image{
+   padding-left: 70px;
+   padding-top: 50px;
+  
+}
+.home .image:hover{
+    position: relative;
+    animation: myphoto 1s ;
+}
+
+@keyframes myphoto {
+    from{left: 0px;}
+    to{left: 30px;}
+    
+}
+
+#about {
+    height: 750px;
+    width: 100%;
+    background: rgb(6, 43, 43);
+
+}
+
+
+
+.about {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: 100px;
+
+}
+
+span {
+    color: aqua;
+}
+
+.about-text {
+    text-align: center;
+}
+
+.about-text h2 {
+    font-size: 56px;
+    font-weight: bold;
+    /* margin: 50px 2px auto auto; */
+
+
+}
+
+
+.about-text h3 {
+    color: rgb(255, 255, 255);
+    margin: 10px 5px;
+}
+
+.about-text p {
+    position: relative;
+    display: inline-flex;
+    width: 70%;
+    justify-content: center;
+    margin-top: 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.imag img {
+    height: 350px;
+    width: 300px;
+    margin-top: 70px;
+    margin-left: 50px;
+   
+}
+.imag img:hover{
+    position: relative;
+    animation: mymove 1s ;
+    box-shadow: 0 4px 8px 0 aqua, 0 6px 20px 0 aqua;
+}
+
+@keyframes mymove{
+    from{left: 0px;}
+    to{left: 10px;}
+}
+
+.about-text .btn {
+    font-size: 20px;
+    border: 2px solid aqua;
+    background-color: aqua;
+    color: rgb(5, 34, 34);
+    margin-top: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+
+}
+
+.about-text .btn:hover {
+    color: aqua;
+    background-color: rgb(5, 34, 34);
+    border: 2px solid aqua;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#services {
+    height: 700px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.services {
+    padding-top: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-box{
+    padding-top: 100px;
+}
+
+#services h1 {
+    font-size: 50px;
+    padding-top: 70px;
+    margin-bottom: 50px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.services .card h3 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.para {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+
+
+.container .services {
+    padding: 25px 100px;
+    justify-content: space-between;
+}
+
+.services .card a>i {
+    /* display: inline-block; */
+    text-align: center;
+    font-size: 40px;
+    padding-left: 46%;
+    color: rgb(5, 34, 34);
+    margin-bottom: 15px;
+    padding-top: 15px;
+
+}
+
+.card .button {
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    font-size: 12px;
+    align-items: center;
+    margin: 0 0 12px 140px;
+    text-decoration: none;
+    padding: 10px 10px;
+    color: white;
+    background: rgb(5, 34, 34);
+    height: 40px;
+    width: 100px;
+    border: 2px solid rgb(5, 34, 34);
+    border-radius: 25px;
+
+}
+
+.services .card {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0 10px 0 10px;
+    background: aqua;
+
+    border-radius: 25px;
+
+}
+.services .card:hover{
+    background: rgb(117, 252, 252);
+    cursor: pointer;
+}
+
+                                             /* portfolio design  */
+
+#portfolio{
+    height: 700px;
+    width: 100%;
+}
+.portfolio h1 {
+    font-size: 50px;
+    width: 100%;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+
+}
+.portfolio{
+    background: rgb(6, 43, 43);
+    width: 100%;
+}
+.portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    padding: 0 150px 0 150px;
+    gap: 2.5rem;
+    
+}
+
+.portfolio-container .portfolio-box{
+    position: relative;
+border-radius: 2rem;
+box-shadow: 0 0 1rem aqua;
+
+overflow: hidden;
+display: flex;
+
+}
+.portfolio-box .portfolio-layer{
+    position: absolute;
+    left: 0;
+    bottom: 0;   
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgb(66, 136, 136) , transparent);
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 4rem;
+
+}
+.portfolio-box .portfolio-layer p{
+    font-size: 13px;
+    letter-spacing: 0px;
+    color: white;
+}
+.portfolio-box .portfolio-layer h2{
+    font-weight: bold;
+    color: white;
+}
+
+
+.portfolio-box img{  
+    
+    width: 100%;
+}
+.contact{
+   
+}
+
+.contact h1{
+  
+    color: white;
+    font-size: 50px;
+    padding-top: 80px;
+    width: 100%;
+    text-align: center;
+}
+
+.contact .contact-container{
+  
+width: 100%;
+height: 500px;
+padding-top: 80px;
+
+justify-content: center;
+align-items: center;
+text-align: center;
+
+}
+
+.contact-container .contact-box input{
+    margin-bottom: 20px;
+    width: 330px;
+    height: 50px;
+    border-radius: 20px;
+    justify-content: space-between;
+    margin: 25px auto;
+
+}
+.contact-container .contact-box-2 input{
+
+  
+margin-bottom: 30px;
+width: 50%;
+height: 50px;
+border-radius: 20px;
+
+}
+.contact-box-2 #msg{
+    height: 200px;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    background: rgb(6, 43, 43);
+    height: 30px;
+   
+}
+.footer h4{
+width: 100%; 
+color: aqua;  
+padding-top: 5px; 
+font-weight: normal;
+   
+}
+
